@@ -7,7 +7,7 @@ Alrighty. Now that you've got the basics under your fingers, it's time for a new
 In this challenge, you will build the logic needed to model a simple thermostat.
 
 ### Learning Objectives covered
-* Use Jasmine to test-drive the development of a thermostat class
+* Use `Cypress` to test-drive the development of a thermostat class
 
 ### Challenge setup
 
@@ -33,6 +33,7 @@ Specification:
 - [ ] Repeat until you've run out of tests
 
 ### Resources
+- [Cypress](https://docs.cypress.io/guides/getting-started/writing-your-first-test#Write-a-real-test)
 - [Strict Mode on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [Master the `this` keyword](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
 
