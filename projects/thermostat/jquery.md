@@ -22,8 +22,8 @@ The first part of this project is intentionally left really open. When you first
 - [ ] Play with jQuery
 - [ ] Play with jQuery a bit more
 - [ ] Go to [You Might Not Need jQuery](http://youmightnotneedjquery.com/) and see the vanilla JavaScript you would have to write. It's good to at least know that you can do it without jQuery, and to understand that it's all just JavaScript under the hood.
-- [ ] Create another file that will hold your JavaScript code that manages the interface between the UI and the thermostat object.  Load the file into your HTML page.
-- [ ] Hook up your buttons/links so they run the methods on the underlying thermostat model
+- [ ] Use your app runner to manage the interface between the UI and the thermostat object.
+- [ ] Hook up your buttons/links so they run the methods on the underlying thermostat model by grabbing elements on the page and adding event listeners for click events and others that you want.
 
 ### Resources
 - [Short jQuery tutorial](http://learn.jquery.com/about-jquery/how-jquery-works/)
