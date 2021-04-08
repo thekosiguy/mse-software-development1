@@ -1,0 +1,18 @@
+{
+  "name": "working-with-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dearshrewdwit",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.23.0"
+  },
+  "devDependencies": {
+    "cypress": "^7.0.1",
+    "http-server": "^0.12.3"
+  }
+}
