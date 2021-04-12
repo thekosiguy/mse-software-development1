@@ -33,6 +33,9 @@ Then they see the current temperature
 ```
 ![](./images/domain-model.png)
 
+### Screen Recording
+- [youtube](https://youtu.be/Mxz5hvxqMNc)
+
 ### Resources
 - [cypress intercept()](https://docs.cypress.io/api/commands/intercept#Comparison-to-cy-route)
 - [test fixtures](https://stackoverflow.com/questions/12071344/what-are-fixtures-in-programming)
