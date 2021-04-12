@@ -17,11 +17,16 @@ By the end of this module all software engineers can:
  - Apply a learning cycle in a new domain (plan/act/reflect)
 
 ### Workshops
+- [Callbacks](./workshops/callbacks-following-the-flow-of-control)
+- [Working with APIs](./workshops/working-with-apis)
 
 ### Pair Projects
+- [Thermostat](./projects/thermostat)
+- [YATDL](./projects/yatdl)
 
 ### Coach Screen Recordings
 
 ### Challenges
+- [News Summary Challenge](https://github.com/digital-futures-academy/news-summary-challenge)
 
 ### Resources
