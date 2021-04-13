@@ -25,6 +25,7 @@ Implement a simple react app!
 #### Resources
 
 - [What's state in react?](https://reactjs.org/docs/faq-state.html)
+- [Component Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 #### Further
 
