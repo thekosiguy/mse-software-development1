@@ -5,16 +5,20 @@
 - Explain and present your work to your peers
 
 ## Task
+Your app could be one or more of the following
+- an app that consumes data from an [API](https://github.com/public-apis/public-apis) (eg GitHub API)
+- a game (eg: tic tac toe, battleships, Game of Life)
+- a tool (eg: linter, test-framework, other)
 
-- Choose an [API](https://github.com/public-apis/public-apis)
-- Choose a Game
+Decide what kind of app you'd like to build and any data that you need for it, then go through a short design process to generate mockups and user journeys so you an start work.
 
 ### Design Process
 
 #### Part 1
 1. Brainstorm all possible interactions you'd love your app to support.
 2. Prioritise them
-3. Decide what constitutes your MVP -  Likely the first couple of interactions at most. Be ruthless!
+3. Break these down into smaller interactions or steps
+4. Decide what constitutes your MVP -  Likely the first couple of interactions at most. Be ruthless!
 
 #### Part 2
 4. Flesh out user journeys for the MVP interactions with wireframes and mockups
