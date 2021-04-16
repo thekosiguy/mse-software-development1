@@ -17,7 +17,7 @@ A coach will demonstrate building a component that requests data from an API.
 
 #### Resources
 - [React Lifecycle methods](https://reactjs.org/docs/react-component.html)
-[React Lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [React Lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 - [Using the GitHub API](./using-the-github-api.md)
 
 #### Further
