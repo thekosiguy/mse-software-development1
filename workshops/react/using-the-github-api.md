@@ -11,7 +11,7 @@ However, you can get most data without authentication.
 #### Using curl
 ```sh
 # request for data from the /users endpoint with authentication
-curl "https://api.github.com/users/dearshrewdwit" \
+curl "https://api.github.com/users/<GITHUB USERNAME>" \
 -H "Authorization: token <YOUR TOKEN HERE>" \
 -H "Accept: application/vnd.github.v3+json" \
 ```
