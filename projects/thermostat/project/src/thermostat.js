@@ -7,16 +7,20 @@ class Thermostat {
 
     up() {
         if (this.power) {
-            if (this.degree !== 25) return this.degree++;
+            if (this.degree !== 25) return ++this.degree;
         }
         else {
-            if (this.degree !== 32) return this.degree++;
+            if (this.degree !== 32) return ++this.degree;
         }
+        return this.degree;
     }
 
     toggle() {
         if (this.power) this.power = false;
-        else this.power = true;
+        else {
+            if (this.degree > 25) this.degree = 25;
+            this.power = true;
+        };
     }
 
     reset() {
@@ -31,8 +35,9 @@ class Thermostat {
     }
 
     down() {
-        if(this.degree !== this.minimum) return this.degree--;
+        if (this.degree !== this.minimum) return --this.degree;
+        return this.degree;
     }
 }
 
-module.exports = Thermostat;
+//module.exports = Thermostat;
