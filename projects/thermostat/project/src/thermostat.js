@@ -15,6 +15,11 @@ class Thermostat {
         return this.degree;
     }
 
+    down() {
+        if (this.degree !== this.minimum) return --this.degree;
+        return this.degree;
+    }
+
     toggle() {
         if (this.power) this.power = false;
         else {
@@ -32,11 +37,6 @@ class Thermostat {
         if (this.degree < 18) return 'low usage';
         else if (this.degree <= 25) return 'medium usage';
         else return 'high usage';
-    }
-
-    down() {
-        if (this.degree !== this.minimum) return --this.degree;
-        return this.degree;
     }
 }
 
