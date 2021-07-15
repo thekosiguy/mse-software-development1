@@ -37,7 +37,7 @@ Then they see the current temperature
 - [youtube](https://youtu.be/Mxz5hvxqMNc)
 
 ### Resources
-- [cypress intercept()](https://docs.cypress.io/api/commands/intercept#Comparison-to-cy-route)
+- [cypress intercept()](https://docs.cypress.io/api/commands/intercept#Stubbing-a-response)
 - [test fixtures](https://stackoverflow.com/questions/12071344/what-are-fixtures-in-programming)
 
 ### Further
