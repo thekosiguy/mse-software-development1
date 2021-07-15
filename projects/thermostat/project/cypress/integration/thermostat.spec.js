@@ -60,4 +60,13 @@ describe('Thermostat home page', () => {
         cy.get("#background").should('have.css', 'background-color')
             .and('eq', 'rgb(0, 255, 0)');
     })
+
+    it('checks that the thermostat bar increases as the up button is pressed', function () {
+        cy.visit('/');
+        cy.get("#upButton").click();
+        cy.get("#upButton").click();
+        cy.get("#upButton").click();
+
+        cy.get('#progressBar').should('have.value', 23);
+     }) 
 })
