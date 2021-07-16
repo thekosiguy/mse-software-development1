@@ -1,22 +1,34 @@
 class Thermostat {
     constructor(degree = 20, minimum = 10) {
-        this.degree = degree;
+        
+        let x = degree.toFixed(0);
+        if (x > 25) x = 25;
+        else if (x < 10) x = 10;
+
+        this.degree = x;
         this.minimum = minimum;
         this.power = true;
+        this.currentTemp = x;
     }
 
     up() {
         if (this.power) {
-            if (this.degree !== 25) return ++this.degree;
+            ++this.degree;
+            if (this.degree > 25) this.degree = 25;
+            return this.degree;
+            
         }
         else {
-            if (this.degree !== 32) return ++this.degree;
+            ++this.degree;
+            if (this.degree > 32) this.degree = 32;
+            return this.degree;
         }
         return this.degree;
     }
 
     down() {
-        if (this.degree !== this.minimum) return --this.degree;
+        --this.degree;
+        if (this.degree <= this.minimum) this.degree = 10;
         return this.degree;
     }
 
@@ -29,7 +41,7 @@ class Thermostat {
     }
 
     reset() {
-        this.degree = 20;
+        this.degree = this.currentTemp;
         this.power = true;
     }
 

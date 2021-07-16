@@ -1,6 +1,16 @@
 window.addEventListener('load', function () {
 
-	const thermostat = new Thermostat();
+	$.get("http://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=c0c7f2271ebb8abeb6167ed6c431cbe9", function (data) {
+		const appElement = document.getElementById("message");
+		const appElement2 = document.getElementById("current");
+		x = data.main.temp;		
+		thermostat = new Thermostat(x);
+		appElement.innerText = thermostat.degree + 'C';
+		progress.setAttribute('value', thermostat.degree);
+		appElement2.innerText = `Temperature in ${data.name} is ${x}C`
+	})
+
+	let thermostat;
 
 	const upButton = document.getElementById("upButton");
 
@@ -22,8 +32,8 @@ window.addEventListener('load', function () {
 
 	upButton.addEventListener('click', function () {
 
-		message.innerText = thermostat.up();
-		progress.setAttribute('value', message.innerText);
+		message.innerText = thermostat.up() + 'C';
+		progress.setAttribute('value', thermostat.degree);
 		if (thermostat.usage() === 'high usage') background.style.backgroundColor = 'rgb(150, 0, 0)';
 		else if (thermostat.usage() === 'medium usage') background.style.backgroundColor = 'rgb(255, 255, 0)';
 		else background.style.backgroundColor = 'rgb(0, 255, 0)';
@@ -31,8 +41,8 @@ window.addEventListener('load', function () {
 	})
 	downButton.addEventListener('click', function () {
 
-		message.innerText = thermostat.down();
-		progress.setAttribute('value', message.innerText);
+		message.innerText = thermostat.down() + 'C';
+		progress.setAttribute('value', thermostat.degree);
 		if (thermostat.usage() === 'high usage') background.style.backgroundColor = 'rgb(150, 0, 0)';
 		else if (thermostat.usage() === 'medium usage') background.style.backgroundColor = 'rgb(255, 255, 0)';
 		else background.style.backgroundColor = 'rgb(0, 255, 0)';
@@ -47,19 +57,20 @@ window.addEventListener('load', function () {
 		else {
 			dot.style.backgroundColor = "green";
 			thermostat.toggle();
-			message.innerText = thermostat.degree;
+			message.innerText = thermostat.degree + 'C';
 			dotText.innerText = "On";
 		}
 	})
 	resetButton.addEventListener('click', function () {
 		thermostat.reset();
-		message.innerText = thermostat.degree;
-		progress.setAttribute('value', message.innerText);
+		message.innerText = thermostat.degree + 'C';
+		progress.setAttribute('value', thermostat.degree);
 		background.style.backgroundColor = 'rgb(255, 255, 0)';
 		dot.style.backgroundColor = "green";
 		dotText.innerText = "On";
     })
 
+	
 
 })
 
