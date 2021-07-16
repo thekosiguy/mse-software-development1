@@ -26,8 +26,10 @@ button {
 	margin-top: 25px;
 }
 #progressBar {
-	background-color: red;
+	color: red;	
 }
+
+
 #progress {
 	transform: rotate(270deg);
 	position: absolute;
@@ -35,4 +37,10 @@ button {
 	bottom: 500px;
 	height: 50px;
 	width: 100px;
+}
+#current {
+	font-size : 30px;
+}
+#welcome {
+	font-size: 50px;
 }
