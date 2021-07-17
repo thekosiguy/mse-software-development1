@@ -1,4 +1,4 @@
-const Thermostat = require('../src/thermostat.js');
+//const Thermostat = require('../src/thermostat.js');
 
 describe('Test if we can create thermostat object', function () {
     it('Create object and has degree', function () {
@@ -63,8 +63,9 @@ describe('Power saving', function () {
 
         expect(thermostat.degree).toEqual(25);
     })
-    it('Check if maximum tmperature is limited with power off', function () {
+    it('Check if maximum temperature is limited with power off', function () {
         let thermostat = new Thermostat(32);
+        thermostat.degree = 32;
 
         thermostat.toggle();
 
